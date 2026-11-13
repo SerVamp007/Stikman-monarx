@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#05030c"><link rel="apple-touch-icon" href="icon-192.png">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <title>Легенды Стикмен</title><link href='https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap' rel='stylesheet'>
 <style>
@@ -1285,4 +1285,4 @@ function loop(n){const dt=Math.min(.033,(n-last)/1000);last=n;ts=Math.min(1,ts+d
  hudT+=dt;if(hudT>.1){hudT=0;['s1','s2','s3'].forEach((id,i)=>{const t=cd[i]>0?Math.ceil(cd[i])+'':SKI[SV.sk[i]];if(BE[id].textContent!==t){BE[id].textContent=t;BE[id].style.opacity=cd[i]>0?.5:1}});BE.u.style.opacity=UL>=100?1:.4;BE.u.style.boxShadow=UL>=100?'0 0 14px #ffd24a':'none';BE.k.style.opacity=P&&P.exh?.4:1;{const q=BE.q,sh=ctlOn&&state==='play'&&!HOLY&&!holyUsed&&!paused&&P.hp>0&&P.hp<=P.mx*.5,d=sh?'flex':'none';if(q.style.display!==d){q.style.display=d;if(sh){snd(880,.25,'sine',.12,2);txt(P.x,P.y-100,'☀ Доступен Луч Света!','#fff2a0')}}}}
  shBtn();requestAnimationFrame(loop)}
 requestAnimationFrame(loop);
-</script></body></html>
+</script><script>if('serviceWorker' in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script></body></html>
